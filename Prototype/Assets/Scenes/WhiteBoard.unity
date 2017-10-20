@@ -224,7 +224,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d85d458c5529ce47be074cb2f33cefc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  linePrefab: {fileID: 1593243685309550, guid: b3a845bd3f1309f49b4cca5c7b137965, type: 2}
+  blackLinePrefab: {fileID: 1593243685309550, guid: b3a845bd3f1309f49b4cca5c7b137965,
+    type: 2}
+  whiteLinePrefab: {fileID: 1778295071466436, guid: fde7c1333691e6c438c32c4594bf037c,
+    type: 2}
+  allLines: []
 --- !u!4 &640858652
 Transform:
   m_ObjectHideFlags: 0
