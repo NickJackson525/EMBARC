@@ -2,9 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LineCreator : MonoBehaviour {
-
-    public GameObject linePrefab;
+public class LineCreator : MonoBehaviour
+{
+    public GameObject blackLinePrefab;
+    public GameObject whiteLinePrefab;
+    public GameObject[] allLines;
 
     Line activeLine;
 	// Use this for initialization
@@ -17,7 +19,7 @@ public class LineCreator : MonoBehaviour {
     {
         if (Input.GetMouseButtonDown(0))
         {
-            GameObject lineGO = Instantiate(linePrefab);
+            GameObject lineGO = Instantiate(blackLinePrefab);
             activeLine = lineGO.GetComponent<Line>();
         }
 
@@ -26,11 +28,31 @@ public class LineCreator : MonoBehaviour {
             activeLine = null;
         }
 
-        if(activeLine != null)
+        if (Input.GetMouseButtonDown(1))
+        {
+            GameObject lineGO = Instantiate(whiteLinePrefab);
+            activeLine = lineGO.GetComponent<Line>();
+        }
+
+        if (Input.GetMouseButtonUp(1))
+        {
+            activeLine = null;
+        }
+
+        if (activeLine != null)
         {
             Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             activeLine.UpdateLine(mousePos);
         }
        
+        if(Input.GetKeyUp(KeyCode.Delete))
+        {
+            allLines = GameObject.FindGameObjectsWithTag("Line");
+
+            foreach(GameObject line in allLines)
+            {
+                Destroy(line);
+            }
+        }
 	}
 }

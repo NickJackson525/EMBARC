@@ -22,8 +22,8 @@ GameObject:
   - component: {fileID: 120979821747845490}
   - component: {fileID: 114580017819879724}
   m_Layer: 0
-  m_Name: Line
-  m_TagString: Untagged
+  m_Name: Line_Black
+  m_TagString: Line
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
