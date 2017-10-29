@@ -6,6 +6,11 @@ TagManager:
   tags:
   - Line
   - Canvas
+  - Flame
+  - Node
+  - Spaceship
+  - UI
+  - Button
   layers:
   - Default
   - TransparentFX
