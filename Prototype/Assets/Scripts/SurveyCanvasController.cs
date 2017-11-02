@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class UICanvasController : MonoBehaviour
+public class SurveyCanvasController : MonoBehaviour
     
 {
     public GameObject[] Canvases = new GameObject[14];
