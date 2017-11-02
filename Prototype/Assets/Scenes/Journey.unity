@@ -331,61 +331,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 1781705521319460, guid: cb7709228831eb149aeb1a17821e585d, type: 2}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114103289777701182, guid: cb7709228831eb149aeb1a17821e585d,
-        type: 2}
-      propertyPath: PathNode
-      value: 
-      objectReference: {fileID: 1336110233702328, guid: d5e5eae47a354c645bd5788fb62dc4fa,
-        type: 2}
-    - target: {fileID: 1589767891310146, guid: cb7709228831eb149aeb1a17821e585d, type: 2}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1268920494297614, guid: cb7709228831eb149aeb1a17821e585d, type: 2}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1511418538347206, guid: cb7709228831eb149aeb1a17821e585d, type: 2}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1641400556328372, guid: cb7709228831eb149aeb1a17821e585d, type: 2}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1874292139394346, guid: cb7709228831eb149aeb1a17821e585d, type: 2}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 212962512772895214, guid: cb7709228831eb149aeb1a17821e585d,
-        type: 2}
-      propertyPath: m_SortingOrder
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 212523671591167668, guid: cb7709228831eb149aeb1a17821e585d,
-        type: 2}
-      propertyPath: m_SortingOrder
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 212635634339513810, guid: cb7709228831eb149aeb1a17821e585d,
-        type: 2}
-      propertyPath: m_SortingOrder
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 212203045005415304, guid: cb7709228831eb149aeb1a17821e585d,
-        type: 2}
-      propertyPath: m_SortingOrder
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 212407713245623844, guid: cb7709228831eb149aeb1a17821e585d,
-        type: 2}
-      propertyPath: m_SortingOrder
-      value: 2
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cb7709228831eb149aeb1a17821e585d, type: 2}
   m_IsPrefabParent: 0

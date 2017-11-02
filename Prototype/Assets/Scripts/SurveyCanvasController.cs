@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class SurveyCanvasController : MonoBehaviour
     
 {
-    public GameObject[] Canvases = new GameObject[6];
+    public GameObject[] Canvases = new GameObject[14];
        
 	// Use this for initialization
 	void Start ()
