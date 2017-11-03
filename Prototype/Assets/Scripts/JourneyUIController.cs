@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class JourneyUIController : MonoBehaviour
 {
@@ -33,7 +34,7 @@ public class JourneyUIController : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
     {
-        if(spaceship.GetComponent<SpaceshipMovement>().phase == 1 && !pressedButton)
+        if(spaceship && spaceship.GetComponent<SpaceshipMovement>().phase == 1 && !pressedButton)
         {
             foreach (GameObject obj in buttons)
             {
@@ -78,5 +79,10 @@ public class JourneyUIController : MonoBehaviour
                 pressedButton = true;
             }
         }
+    }
+
+    public void LoadScene(string sceneName)
+    {
+        SceneManager.LoadScene(sceneName);
     }
 }

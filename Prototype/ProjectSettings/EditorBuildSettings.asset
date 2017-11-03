@@ -9,5 +9,14 @@ EditorBuildSettings:
     path: Assets/Scenes/Main.unity
     guid: 70caf626b7a655c4eb78bef3128ec1d2
   - enabled: 1
+    path: Assets/Scenes/Journey.unity
+    guid: 35589f2b877ccab4bbf4cba5e1f65dd3
+  - enabled: 1
+    path: Assets/Scenes/Tools.unity
+    guid: 4ee17ade908b57c41817671283dcf2ee
+  - enabled: 1
     path: Assets/Scenes/WhiteBoard.unity
     guid: f28850d7409ec064a9ba0f4ec038e813
+  - enabled: 1
+    path: Assets/Scenes/Survey.unity
+    guid: 6d26a0b88f5103a4ab3782d188324f79
