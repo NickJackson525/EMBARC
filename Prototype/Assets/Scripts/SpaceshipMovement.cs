@@ -6,8 +6,12 @@ using UnityEngine;
 public class SpaceshipMovement : MonoBehaviour
 {
     public GameObject[] jetFlames;
+    public GameObject[] buttons;
     public List<GameObject> Nodes;
     public GameObject PathNode;
+    public GameObject MainCamera;
+    public GameObject wholeJourneyViewCamera;
+    public GameObject leaderboardView;
     GameObject[] temp;
     GameObject createdNode;
     public bool isMoving = false;
@@ -23,6 +27,7 @@ public class SpaceshipMovement : MonoBehaviour
     {
         jetFlames = GameObject.FindGameObjectsWithTag("Flame");
         temp = GameObject.FindGameObjectsWithTag("Node");
+        buttons = GameObject.FindGameObjectsWithTag("Button");
         startRotation = transform.rotation;
 
         foreach(GameObject obj in temp)
@@ -37,6 +42,27 @@ public class SpaceshipMovement : MonoBehaviour
         if(Input.GetKeyUp(KeyCode.Space))
         {
             isMoving = true;
+        }
+
+        if(Input.GetKeyUp(KeyCode.Alpha1))
+        {
+            MainCamera.SetActive(true);
+            wholeJourneyViewCamera.SetActive(false);
+            leaderboardView.SetActive(false);
+        }
+
+        if (Input.GetKeyUp(KeyCode.Alpha2))
+        {
+            MainCamera.SetActive(false);
+            wholeJourneyViewCamera.SetActive(true);
+            leaderboardView.SetActive(false);
+        }
+
+        if (Input.GetKeyUp(KeyCode.Alpha3))
+        {
+            MainCamera.SetActive(false);
+            wholeJourneyViewCamera.SetActive(false);
+            leaderboardView.SetActive(true);
         }
 
         if (isMoving && !jetFlames[0].activeSelf)
@@ -81,6 +107,11 @@ public class SpaceshipMovement : MonoBehaviour
                                 isMoving = false;
                                 phase++;
                                 currNodeIndex = 1;
+
+                                foreach (GameObject button in buttons)
+                                {
+                                    button.SetActive(true);
+                                }
                             }
                         }
                     }
@@ -91,6 +122,11 @@ public class SpaceshipMovement : MonoBehaviour
         {
             isMoving = false;
             transform.rotation = Quaternion.Lerp(transform.rotation, startRotation, .1f);
+
+            foreach (GameObject button in buttons)
+            {
+                button.SetActive(true);
+            }
         }
     }
 
@@ -98,10 +134,6 @@ public class SpaceshipMovement : MonoBehaviour
     {
         if (Nodes.Count > 0)
         {
-            //foreach (GameObject obj in Nodes)
-            //{
-            //    Destroy(obj);
-            //}
             Nodes.RemoveAt(0);
             Nodes.RemoveAt(0);
             Nodes.RemoveAt(0);

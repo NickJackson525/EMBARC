@@ -51,7 +51,7 @@ public class JourneyUIController : MonoBehaviour
         spaceship.GetComponent<SpaceshipMovement>().NextStage();
         spaceship.GetComponent<SpaceshipMovement>().isMoving = true;
 
-        foreach (GameObject obj in UIElements)
+        foreach (GameObject obj in buttons)
         {
             obj.SetActive(false);
         }
