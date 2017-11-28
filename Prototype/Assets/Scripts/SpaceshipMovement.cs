@@ -12,6 +12,7 @@ public class SpaceshipMovement : MonoBehaviour
     public GameObject MainCamera;
     public GameObject wholeJourneyViewCamera;
     public GameObject leaderboardView;
+    public GameObject BMC_Popup;
     GameObject[] temp;
     GameObject createdNode;
     public bool isMoving = false;
@@ -128,6 +129,11 @@ public class SpaceshipMovement : MonoBehaviour
                 button.SetActive(true);
             }
         }
+    }
+
+    public void BMCPopup()
+    {
+        BMC_Popup.SetActive(true);
     }
 
     public void NextStage()
